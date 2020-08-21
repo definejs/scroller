@@ -1,0 +1,25 @@
+{
+  "name": "@definejs/scroller",
+  "version": "0.1.6",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "micty",
+  "email": "mictydeng@qq.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/definejs/scroller.git"
+  },
+  "dependencies": {
+    "@definejs/emitter": "^0.1.3",
+    "@definejs/fn": "^0.1.1",
+    "@definejs/iscroll": "^0.1.0",
+    "@definejs/loading": "^0.1.4",
+    "@definejs/object": "^0.1.6",
+    "@definejs/panel": "^0.1.1",
+    "@definejs/string": "^0.1.4",
+    "jquery": "^3.5.1"
+  }
+}
