@@ -1,6 +1,6 @@
 {
   "name": "@definejs/scroller",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -17,7 +17,7 @@
     "@definejs/fn": "^0.1.1",
     "@definejs/iscroll": "^0.1.0",
     "@definejs/loading": "^0.1.4",
-    "@definejs/object": "^0.1.6",
+    "@definejs/object": "^1.0.6",
     "@definejs/panel": "^0.1.1",
     "@definejs/string": "^0.1.4",
     "jquery": "^3.5.1"
