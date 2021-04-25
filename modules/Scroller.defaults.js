@@ -4,6 +4,11 @@
 */
 module.exports = {
     /**
+    * 生成组件时的 id 前缀。
+    * 建议保留现状。
+    */
+    idPrefix: 'definejs-Scroller',
+    /**
     * 是否显示滚动条。 
     * 取值为 true|false。
     */

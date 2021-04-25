@@ -1,6 +1,6 @@
 {
   "name": "@definejs/scroller",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {},
@@ -15,6 +15,7 @@
   "dependencies": {
     "@definejs/emitter": "^1.0.0",
     "@definejs/fn": "^1.0.0",
+    "@definejs/id-maker": "^1.0.1",
     "@definejs/iscroll": "^1.0.0",
     "@definejs/loading": "^1.0.0",
     "@definejs/object": "^1.1.0",

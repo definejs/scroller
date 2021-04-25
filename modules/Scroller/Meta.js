@@ -1,16 +1,14 @@
 ﻿
 const $Object = require('@definejs/object');
-const $String = require('@definejs/string');
+const IDMaker = require('@definejs/id-maker');
 
-const prefix = 'definejs-scroller-';    //用于生成组件 id 的前缀部分。
-const suffix = 4;                       //用于生成组件 id 的随机部分的长度。
 
 
 
 module.exports = {
 
     create(config, others) {
-        let id = $String.randomId(prefix, suffix);
+        let maker = new IDMaker(config.idPrefix);
 
         //过滤用于构造 IScroll 实例的配置字段。
         let options = $Object.filter(config, [
@@ -35,7 +33,7 @@ module.exports = {
 
 
         let meta = {
-            'id': id,
+            'id': maker.next(),
             'enabled': true,
             'options': options,     //用于构造 IScroll 实例的配置字段。
             'style': style,         //
