@@ -100,6 +100,6 @@ module.exports = {
             }, 100);
         });
 
-        return scroller;
+        return { scroller, indicators, };
     },
 };

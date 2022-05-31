@@ -99,7 +99,11 @@ class Scroller {
             return;
         }
 
-        meta.scroller = this.iscroll = IScroll.create(meta.container, meta.options);
+        let { scroller, indicators, } = IScroll.create(meta.container, meta.options);
+
+        meta.scroller = this.iscroll = scroller;
+        meta.indicators = indicators;
+
         meta.$.addClass('definejs-scroller');
         meta.$.css(meta.style);
 
@@ -115,15 +119,13 @@ class Scroller {
     */
     refresh(delay, ...args) {
         let meta = mapper.get(this);
-        let scroller = meta.scroller;
-        let indicators = scroller.indicators || [];
 
         Fn.delay(delay, function () {
-            scroller.refresh(...args);
+            meta.scroller.refresh(...args);
 
             //隐藏全部滚动条
-            indicators.forEach(function (item, index) {
-                $(item).hide();
+            meta.indicators.forEach(function (item, index) {
+                item.hide();
             });
         });
     }
